@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html/css</title>
+    <link rel="stylesheet" href="css/style.css">
+<style>
+    html {
+        font-size: 10px;
+    }
+    p {
+        background: green;
+        font-size: 2rem; 기본은 브라우저의 16px을 기준으로 함. rem과 em을 쓰면 반응형 작업할 때 좋음. em은 부모 rem?em?크기를 따라가서. 담당자가 폰트 크기 다 키워달라고 할 때 px이면 하나하나 다 고쳐야 함
+    }
+    strong {
+        font-size: 0.5em;
+    }
+</style>
+</head>
+<body>
+    <p class="dashed">
+        안녕하세요!
+      </p>
+      
+      <p class="wavy">
+        안녕하세요!
+      </p>
+
+
+    <p class="px">
+        px<br/>
+        <button class="btn1">button</button>
+        <button class="btn2">button</button>
+        <button class="btn3">button</button>
+      </p>
+      
+      <p class="em">
+        em<br/>
+        <button class="btn1">button</button>
+        <button class="btn2">button</button>
+        <button class="btn3">button</button>
+      </p>
+      
+      <p class="rem">
+        font-size : rem / em<br/>
+        <button class="btn1">button</button>
+        <button class="btn2">button</button>
+        <button class="btn3">button</button>
+      </p>
+
+    <p style="width: 100px">안녕하세요</p>
+    <p style="width: 50%; height: 100%;">안녕하세요</p> //부모요소의 영향(body에 높이값이 없어서 100을 준다고 해도 늘어나지 않음. body style에 줘야함!)
+    <p style="width: 50vw; height: 100vh;">안녕하세요</p> //창의 영향 */
+    <section>
+    </section>
+</body>
+
+</html>
