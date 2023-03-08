@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid 예제 1</title>
+    <style>
+      .wrap {
+        display: grid;
+        width: 300px;
+        height: 300px;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 2fr 1fr 2fr;
+        grid-template-areas:
+          "a a b"
+          "c d b"
+          "e f f";
+        gap: 10px;
+      }
+
+      .item:nth-child(1) {
+        background: cornflowerblue;
+        grid-area: a;
+      }
+
+      .item:nth-child(2) {
+        background: gold;
+        grid-area: b;
+      }
+
+      .item:nth-child(3) {
+        background: darkslateblue;
+        grid-area: c;
+      }
+
+      .item:nth-child(4) {
+        background: coral;
+        grid-area: d;
+      }
+
+      .item:nth-child(5) {
+        background: tomato;
+        grid-area: e;
+      }
+
+      .item:nth-child(6) {
+        background: darkgreen;
+        grid-area: f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
