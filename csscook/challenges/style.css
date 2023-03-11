@@ -1,0 +1,17 @@
+body {
+  background-image: url(images/bg.png);
+}
+
+.wrap {
+  background-color: white;
+  margin: 30%;
+}
+
+.header {
+  background-color: red;
+  text-align: center;
+}
+
+.body {
+  background-color: orange;
+}
