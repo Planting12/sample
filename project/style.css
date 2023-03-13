@@ -1,0 +1,131 @@
+body {
+  background-color: lightgray;
+  background-image: url(img/foot1.jpg);
+  background-size: cover;
+}
+
+.bori {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  background-size: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.face {
+  width: 497px;
+  height: 472px;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  position: absolute;
+  transform: translate(-50%, 0%);
+  background: #fffbf6;
+  border-radius: 50%;
+}
+
+.face,
+.ear {
+  border: 5px solid #ffd6c9;
+}
+
+.ear {
+  width: 240px;
+  height: 160px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 160px;
+}
+
+.ear.left {
+  width: 240px;
+  height: 160px;
+  border-radius: 80px;
+  background: #e8c4be;
+  transform-origin: 100% 100%;
+  transform: rotate(-30deg);
+  position: absolute;
+  top: 40%;
+  left: -8%;
+}
+
+.ear.right {
+  width: 240px;
+  height: 160px;
+  border-radius: 80px;
+  background: #ffded1;
+  transform-origin: 0% 100%;
+  transform: rotate(30deg);
+  top: 40%;
+  left: 68%;
+}
+
+.eye,
+.nose {
+  background: #684d2e;
+  border-radius: 50%;
+}
+
+.eye.left {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 43px;
+  left: 32%;
+  top: 42%;
+  z-index: 1;
+}
+
+.eye.right {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 43px;
+  left: 68%;
+  top: 42%;
+  z-index: 1;
+}
+
+.nose {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  width: 19px;
+  height: 17px;
+}
+
+.mouth {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 156px;
+  height: 136px;
+  left: 50%;
+  top: 60%;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.cheek {
+  width: 82px;
+  height: 84px;
+  border-radius: 50%;
+  background: #ffdfdf;
+}
+
+.cheek.left {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 25%;
+  top: 50%;
+}
+
+.cheek.right {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 75%;
+  top: 50%;
+}
