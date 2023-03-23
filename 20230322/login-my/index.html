@@ -13,7 +13,7 @@
     <div class="wrap">
         <header>
             <h1>로그인 또는 회원가입</h1>
-            <!-- <img class="img-close" src="./img/close.svg"> -->
+            <img class="img-close" src="./img/close.svg">
 
         </header>
         <hr>
@@ -24,8 +24,10 @@
             <form class="main-login">
                 <label class="a11y-hidden" for="user-id">아이디</label>
                 <input class="input-style" id="user-id" type="text" placeholder="아이디" required>
+                <!-- <p class="id-warning">아이디를 입력해주세요</p> -->
                 <label class="a11y-hidden" for="user-pw">비밀번호</label>
                 <input class="input-style" id="user-pw" type="password" placeholder="비밀번호" required>
+                <!-- <p class="worng-warning">아이디 혹은 비밀번호가 일치하지 않습니다.</p> -->
 
                 <div class="check-box">
                     <input type="checkbox" id="inpHold" class="inpHold text-hide">
@@ -34,16 +36,19 @@
 
                 <button class="login-button" type="submit">로그인</button>
             </form>
-            <a href="#">회원가입</a><a href="#"> | 아이디/비밀번호 찾기</a>
+            <div class="login-util">
+                <a class="join" href="#">회원가입</a><a class="search-id-pw" href="#">아이디/비밀번호 찾기</a>
+            </div>
         </section>
 
         <section class="social-login">
             <h2 class="a11y-hidden">소셜 로그인</h2>
-            <p>또는</p>
-            <a href="#" class="social-button">구글 계정으로 로그인</a>
-            <a href="#" class="social-button">페이스북 계정으로 로그인</a>
-            <a href="#" class="social-button">네이버 계정으로 로그인</a>
-            <a href="#" class="social-button">카카오톡 계정으로 로그인</a>
+            <div class="or-line">또는</div>
+            <a href="#" class="social-button" id="google"><img src="./img/google.svg" alt="google"> 구글 계정으로 로그인</a>
+            <a href="#" class="social-button" id="facebook"><img src="./img/facebook.svg" alt="facebook"> 페이스북 계정으로
+                로그인</a>
+            <a href="#" class="social-button" id="naver"><img src="./img/naver.svg"> 네이버 계정으로 로그인</a>
+            <a href="#" class="social-button" id="kakao"><img src="./img/kakao.svg"> 카카오톡 계정으로 로그인</a>
         </section>
     </div>
 </body>
