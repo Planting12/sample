@@ -40,7 +40,6 @@ button {
 
 .wrap {
   width: 520px;
-  height: 736px;
   margin: 100px auto;
   background: #ffffff;
   border: 1px solid #c4c4c4;
@@ -61,6 +60,10 @@ header h1 {
 }
 
 header img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 22px 24px 20px 0px;
 }
 
 /* main */
@@ -81,8 +84,6 @@ header img {
 }
 
 .input-style {
-  width: 472px;
-  height: 50px;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -95,11 +96,26 @@ header img {
   margin: 16px 15px;
 }
 
+.input-style:focus {
+  outline-color: rgba(244, 73, 46, 1);
+}
+
+/* .main [class$="warning"] {
+  font-weight: 400;
+  font-size: 14px;
+  color: #f4492e;
+  margin: 10px 0px;
+} */
+
 .main-login a {
   font-weight: 400;
   font-size: 14px;
   color: #767676;
   text-align: center;
+}
+
+.main-login input {
+  padding: 15px 16px;
 }
 
 .login-button {
@@ -111,6 +127,19 @@ header img {
   background: #2f80ed;
   border-radius: 5px;
   text-align: center;
+}
+
+.login-util {
+  font-weight: 400;
+  font-size: 14px;
+  color: #767676;
+  margin: 20px 0px 30px 0px;
+  text-align: center;
+}
+
+.join::after {
+  content: "|";
+  margin: 0px 12px;
 }
 
 /* 체크박스 */
@@ -134,19 +163,82 @@ header img {
   color: #767676;
 }
 
+.or-line {
+  font-weight: 400;
+  font-size: 14px;
+  color: #767676;
+  margin-bottom: 20px;
+}
+
+.or-line:before {
+  content: " ";
+  display: inline-block;
+  width: 210px;
+  height: 1px;
+  margin: 0px 13px 0px 0px;
+  vertical-align: middle;
+  background: #c4c4c4;
+}
+
+.or-line:after {
+  content: " ";
+  display: inline-block;
+  width: 210px;
+  height: 1px;
+  margin: 0px 0px 0px 13px;
+  vertical-align: middle;
+  background: #c4c4c4;
+}
+
 /* 소셜 로그인 */
 .social-login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  padding: 0px 24px;
 }
 
 .social-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 472px;
   height: 50px;
   font-weight: 500;
   font-size: 16px;
-  border: 1px solid #767676;
+
+  margin-bottom: 10px;
+
+  border: 1px solid;
   border-radius: 5px;
   background: #ffffff;
+}
+
+.social-button:nth-child(n + 3) {
+  margin-bottom: 25px;
+}
+
+.social-login img {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  margin: 11px 12px;
+}
+
+#google {
+  border-color: #767676;
+}
+
+#facebook {
+  border-color: rgba(45, 156, 219, 1);
+}
+
+#naver {
+  border-color: rgba(0, 191, 24, 1);
+}
+
+#kakao {
+  border-color: rgba(242, 201, 76, 1);
 }
