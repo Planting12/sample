@@ -1,0 +1,87 @@
+button,
+li {
+  all: unset;
+}
+
+body,
+div,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.section-intro,
+.section-main,
+.section-footer {
+  padding: 0px 100px 0px 100px;
+}
+
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+/* header */
+
+.section-intro {
+  max-width: 1920px;
+  background: rgba(242, 233, 216, 1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* intro */
+
+.intro-explain {
+  display: flex;
+}
+
+.intro-cat {
+  width: 415px;
+}
+
+/* main */
+.section-main {
+  background: tomato;
+}
+
+.content-1-explain {
+  float: right;
+}
+
+.main-content-1 img {
+  float: left;
+  max-width: 100%;
+}
+
+.main-content-2 {
+  text-align: center;
+}
+
+.main-content-2 img {
+  width: 378px;
+}
+
+.more-explain {
+  display: flex;
+}
+
+/* footer */
+.section-footer {
+  background: gold;
+}
+
+.footer-menu {
+  float: right;
+}
