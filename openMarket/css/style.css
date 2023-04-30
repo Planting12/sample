@@ -1,0 +1,35 @@
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+body {
+  width: 1920px;
+}
+
+header {
+  display: flex;
+}
+
+h1 {
+  width: 124px;
+  height: 38px;
+  left: 320px;
+  top: 26px;
+}
+
+navibar {
+  height: 46px;
+  width: 400px;
+  left: 474px;
+  top: 22px;
+  border-radius: 50px;
+  border-color: rgba(33, 191, 72, 1);
+  background-color: #fff;
+}
