@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -14,13 +15,18 @@
         <form>
             <label class="a11y-hidden">검색 창</label>
             <input type="text" placeholder="상품을 검색해보세요!">
-            <img src="./img/search.png" alt="검색하기">
+            <button type="submit"><img src="./img/search.png" alt="검색하기"></button>
         </form>
-        <ul>
-            <li>장바구니</li>
-            <li>마이페이지</li>
-            <li>로그아웃</li>
-        </ul>
+
+        <nav>
+            <ul>
+                <li><a href="http://www.example.com/cart" class="cart"><img src="./img/icon-shopping-cart.png">장바구니</a>
+                </li>
+                <li>
+                    <a href="http://www.example.com/login" class="mypage"><img src="./img/icon-user.png">로그인</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 </body>
 
